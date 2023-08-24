@@ -33,13 +33,13 @@
       display:flex;
       flex-wrap: wrap;
       align-items: center;
-      height: 886px;
-      border: 1px solid black;
+      height: 100vh;
       justify-content: space-between;
       gap:10px;
     }
     .plan-features>li{
       margin-bottom: 17px;
+      list-style:none;
     }
     .plan-price{
       font-size: 3rem;
@@ -57,6 +57,10 @@
     
     /* Hint: What can you do with a media query and flexbox? */
     @media (max-width: 1250px) {
+      .pricing-container{
+        flex-direction:column;
+        height:100%;
+      }
       
     }
   </style>
