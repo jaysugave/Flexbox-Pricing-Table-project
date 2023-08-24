@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sono', sans-serif;
+    }
+    .pricing-plan{
+      background-color: #f2f2f2 ;
+      padding: 20px;
+      border:1px solid white ;
+      flex-basis: 450px;
+      height: 300px;
+      display:flex;
+      flex-direction: column;
+      text-align: center;
+      border-radius: 2%;
+      
+      
+    }
+    
+    .pricing-plan>*{
+      flex-grow: 1;
+      margin-bottom: 10px;
+      
+    }
+    .pricing-container{
+      display:flex;
+      flex-wrap: wrap;
+      align-items: center;
+      height: 886px;
+      border: 1px solid black;
+      justify-content: space-between;
+      gap:10px;
+    }
+    .plan-features>li{
+      margin-bottom: 17px;
+    }
+    .plan-price{
+      font-size: 3rem;
+      font-weight:bolder ;
+    }
+    .plan-button{
+      background-color: #f60;
+      color: white;
+      border-radius: 5.8%;
+    }
+    .plan-title{
+      font-weight: bolder;
+      font-size: 2rem;
+    }
+    
+    /* Hint: What can you do with a media query and flexbox? */
+    @media (max-width: 1250px) {
+      
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title">Basic</div>
+      <div class="plan-price">₹ 3000/month</div>
+      <ul class="plan-features">
+        <li>✅ 10GB Storage</li>
+        <li>✅ 1 User</li>
+        <li>🚫 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Standard</div>
+      <div class="plan-price">₹ 7000/month</div>
+      <ul class="plan-features">
+        <li>✅ 50GB Storage</li>
+        <li>✅ 5 Users</li>
+        <li>✅ Phone &amp; Email Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Premium</div>
+      <div class="plan-price">₹ 10,000/month</div>
+      <ul class="plan-features">
+        <li>✅ 100GB Storage</li>
+        <li>✅ 10 Users</li>
+        <li>✅ 24/7 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
